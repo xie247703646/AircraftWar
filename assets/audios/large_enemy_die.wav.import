@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/large_enemy_die.wav-056a5d9938cfe1d2a993c13755640764.sample"
+
+[deps]
+
+source_file="res://assets/audios/large_enemy_die.wav"
+dest_files=[ "res://.import/large_enemy_die.wav-056a5d9938cfe1d2a993c13755640764.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

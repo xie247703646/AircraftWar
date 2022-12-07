@@ -1,0 +1,123 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/themes/UITheme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/images/Background.png" type="Texture" id=2]
+[ext_resource path="res://scripts/ui/src/UIMain.gd" type="Script" id=3]
+[ext_resource path="res://assets/fonts/ArtFont.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="Shader" id=2]
+code = "shader_type canvas_item;
+
+uniform vec2 direction = vec2(0,-1);
+uniform float speed = 0.2;
+
+void fragment(){
+	vec2 move = direction * TIME * speed;
+	COLOR = texture(TEXTURE,UV + move);
+}"
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
+shader_param/direction = Vector2( 0, -1 )
+shader_param/speed = 0.1
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="UIMain" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Bg" type="TextureRect" parent="."]
+visible = false
+material = SubResource( 3 )
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MainMenu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -240.0
+margin_top = -402.0
+margin_right = 240.0
+margin_bottom = -98.0002
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="BtnStart" type="Button" parent="MainMenu"]
+margin_left = 40.0
+margin_top = 25.0
+margin_right = 440.0
+margin_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 400, 0 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+text = "开始"
+
+[node name="BtnHelp" type="Button" parent="MainMenu"]
+margin_left = 40.0
+margin_top = 93.0
+margin_right = 440.0
+margin_bottom = 141.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 400, 0 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+text = "帮助"
+
+[node name="BtnSetting" type="Button" parent="MainMenu"]
+margin_left = 40.0
+margin_top = 161.0
+margin_right = 440.0
+margin_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 400, 0 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+text = "设置"
+
+[node name="BtnQuit" type="Button" parent="MainMenu"]
+margin_left = 40.0
+margin_top = 229.0
+margin_right = 440.0
+margin_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 400, 0 )
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+text = "退出"
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -240.0
+margin_top = 70.0
+margin_right = 240.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 1 )
+text = "Aircraft War"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="MainMenu/BtnStart" to="." method="_on_BtnStart_pressed"]
+[connection signal="pressed" from="MainMenu/BtnHelp" to="." method="_on_BtnHelp_pressed"]
+[connection signal="pressed" from="MainMenu/BtnSetting" to="." method="_on_BtnSetting_pressed"]
+[connection signal="pressed" from="MainMenu/BtnQuit" to="." method="_on_BtnQuit_pressed"]

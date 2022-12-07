@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/themes/UITheme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/ui/src/UIHelp.gd" type="Script" id=2]
+[ext_resource path="res://scripts/ui/anim/ScaleOpen.gd" type="Script" id=3]
+[ext_resource path="res://scripts/ui/anim/ScaleClose.gd" type="Script" id=4]
+
+[node name="UIHelp" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 240, 426 )
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+ui_type = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -150.0
+margin_right = 200.0
+margin_bottom = 150.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -92.0
+
+[node name="BtnClose" type="Button" parent="Panel/CenterContainer"]
+margin_left = 160.0
+margin_top = 22.0
+margin_right = 240.0
+margin_bottom = 70.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "关闭"
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 50.0
+margin_bottom = -100.0
+text = "点击拖动飞机"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="ScaleOpen" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="ScaleClose" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[connection signal="pressed" from="Panel/CenterContainer/BtnClose" to="." method="_on_BtnClose_pressed"]

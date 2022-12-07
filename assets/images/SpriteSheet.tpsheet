@@ -1,0 +1,558 @@
+{
+	"textures": [
+		{
+			"image": "SpriteSheet.png",
+			"size": {
+				"w": 937,
+				"h": 973
+			},
+			"sprites": [
+				{
+					"filename": "aircraft_large_explode_1.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_explode_2.png",
+					"region": {
+						"x": 248,
+						"y": 1,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_explode_3.png",
+					"region": {
+						"x": 495,
+						"y": 1,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_explode_4.png",
+					"region": {
+						"x": 1,
+						"y": 282,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_explode_5.png",
+					"region": {
+						"x": 248,
+						"y": 282,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_explode_6.png",
+					"region": {
+						"x": 495,
+						"y": 282,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_idle_1.png",
+					"region": {
+						"x": 1,
+						"y": 563,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_idle_2.png",
+					"region": {
+						"x": 248,
+						"y": 563,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_large_underattack.png",
+					"region": {
+						"x": 495,
+						"y": 563,
+						"w": 245,
+						"h": 279
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_1.png",
+					"region": {
+						"x": 1,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_2.png",
+					"region": {
+						"x": 131,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_explode_1.png",
+					"region": {
+						"x": 261,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_explode_2.png",
+					"region": {
+						"x": 391,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_explode_3.png",
+					"region": {
+						"x": 521,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_explode_4.png",
+					"region": {
+						"x": 651,
+						"y": 844,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_explode_1.png",
+					"region": {
+						"x": 742,
+						"y": 1,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_explode_2.png",
+					"region": {
+						"x": 742,
+						"y": 131,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_explode_3.png",
+					"region": {
+						"x": 742,
+						"y": 261,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_explode_4.png",
+					"region": {
+						"x": 742,
+						"y": 391,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_idle.png",
+					"region": {
+						"x": 742,
+						"y": 521,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_medium_underattack.png",
+					"region": {
+						"x": 742,
+						"y": 651,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "supply_bomb.png",
+					"region": {
+						"x": 781,
+						"y": 781,
+						"w": 61,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "missile_1.png",
+					"region": {
+						"x": 742,
+						"y": 781,
+						"w": 9,
+						"h": 21
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "missile_2.png",
+					"region": {
+						"x": 742,
+						"y": 804,
+						"w": 9,
+						"h": 21
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "life.png",
+					"region": {
+						"x": 781,
+						"y": 886,
+						"w": 75,
+						"h": 50
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "supply_double_missile.png",
+					"region": {
+						"x": 844,
+						"y": 781,
+						"w": 58,
+						"h": 87
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_small_explode_1.png",
+					"region": {
+						"x": 858,
+						"y": 870,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_small_explode_2.png",
+					"region": {
+						"x": 872,
+						"y": 1,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_small_explode_3.png",
+					"region": {
+						"x": 872,
+						"y": 67,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_small_explode_4.png",
+					"region": {
+						"x": 872,
+						"y": 133,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "aircraft_small_idle.png",
+					"region": {
+						"x": 872,
+						"y": 199,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "remain_bomb.png",
+					"region": {
+						"x": 872,
+						"y": 265,
+						"w": 62,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "pause.png",
+					"region": {
+						"x": 872,
+						"y": 323,
+						"w": 42,
+						"h": 45
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "pause_2.png",
+					"region": {
+						"x": 872,
+						"y": 370,
+						"w": 42,
+						"h": 45
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "start.png",
+					"region": {
+						"x": 872,
+						"y": 417,
+						"w": 38,
+						"h": 41
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "start_2.png",
+					"region": {
+						"x": 872,
+						"y": 460,
+						"w": 38,
+						"h": 41
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:30b1c2cab17303612441eb88f518d0e9:fa9a2810a72a9dbadf505914753ce3f1:feb383e149cf7312e812049eacbf64f9$"
+	}
+}

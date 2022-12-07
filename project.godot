@@ -1,0 +1,193 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "SupplyBase",
+"class": "Bomb",
+"language": "GDScript",
+"path": "res://scripts/game/supply/Bomb.gd"
+}, {
+"base": "Area2D",
+"class": "BulletBase",
+"language": "GDScript",
+"path": "res://scripts/game/bullets/BulletBase.gd"
+}, {
+"base": "SupplyBase",
+"class": "DoubleBullet",
+"language": "GDScript",
+"path": "res://scripts/game/supply/DoubleBullet.gd"
+}, {
+"base": "Area2D",
+"class": "EnemyBase",
+"language": "GDScript",
+"path": "res://scripts/game/enemy/EnemyBase.gd"
+}, {
+"base": "BulletBase",
+"class": "EnemyBullet",
+"language": "GDScript",
+"path": "res://scripts/game/bullets/EnemyBullet.gd"
+}, {
+"base": "Reference",
+"class": "Enum",
+"language": "GDScript",
+"path": "res://scripts/Enum.gd"
+}, {
+"base": "Node2D",
+"class": "Game",
+"language": "GDScript",
+"path": "res://scripts/game/Game.gd"
+}, {
+"base": "Reference",
+"class": "MathUtil",
+"language": "GDScript",
+"path": "res://scripts/MathUtil.gd"
+}, {
+"base": "Area2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/game/Player.gd"
+}, {
+"base": "BulletBase",
+"class": "PlayerBullet",
+"language": "GDScript",
+"path": "res://scripts/game/bullets/PlayerBullet.gd"
+}, {
+"base": "UICloseAnim",
+"class": "ScaleClose",
+"language": "GDScript",
+"path": "res://scripts/ui/anim/ScaleClose.gd"
+}, {
+"base": "UIOpenAnim",
+"class": "ScaleOpen",
+"language": "GDScript",
+"path": "res://scripts/ui/anim/ScaleOpen.gd"
+}, {
+"base": "Area2D",
+"class": "SupplyBase",
+"language": "GDScript",
+"path": "res://scripts/game/supply/SupplyBase.gd"
+}, {
+"base": "Reference",
+"class": "UI",
+"language": "GDScript",
+"path": "res://scripts/ui/other/UI.gd"
+}, {
+"base": "Node",
+"class": "UIAnimBase",
+"language": "GDScript",
+"path": "res://scripts/ui/anim/UIAnimBase.gd"
+}, {
+"base": "Control",
+"class": "UIBase",
+"language": "GDScript",
+"path": "res://scripts/ui/src/UIBase.gd"
+}, {
+"base": "UIAnimBase",
+"class": "UICloseAnim",
+"language": "GDScript",
+"path": "res://scripts/ui/anim/UICloseAnim.gd"
+}, {
+"base": "UIBase",
+"class": "UIGame",
+"language": "GDScript",
+"path": "res://scripts/ui/src/UIGame.gd"
+}, {
+"base": "UIBase",
+"class": "UIHelp",
+"language": "GDScript",
+"path": "res://scripts/ui/src/UIHelp.gd"
+}, {
+"base": "UIBase",
+"class": "UIMain",
+"language": "GDScript",
+"path": "res://scripts/ui/src/UIMain.gd"
+}, {
+"base": "UIAnimBase",
+"class": "UIOpenAnim",
+"language": "GDScript",
+"path": "res://scripts/ui/anim/UIOpenAnim.gd"
+}, {
+"base": "UIBase",
+"class": "UISetting",
+"language": "GDScript",
+"path": "res://scripts/ui/src/UISetting.gd"
+} ]
+_global_script_class_icons={
+"Bomb": "",
+"BulletBase": "",
+"DoubleBullet": "",
+"EnemyBase": "",
+"EnemyBullet": "",
+"Enum": "",
+"Game": "",
+"MathUtil": "",
+"Player": "",
+"PlayerBullet": "",
+"ScaleClose": "",
+"ScaleOpen": "",
+"SupplyBase": "",
+"UI": "",
+"UIAnimBase": "",
+"UIBase": "",
+"UICloseAnim": "",
+"UIGame": "",
+"UIHelp": "",
+"UIMain": "",
+"UIOpenAnim": "",
+"UISetting": ""
+}
+
+[application]
+
+config/name="AircraftWar"
+run/main_scene="res://scenes/Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://scripts/Global.gd"
+ConfigMgr="*res://scripts/manager/ConfigMgr.gd"
+UIMgr="*res://scripts/manager/UIMgr.gd"
+SignalMgr="*res://scripts/manager/SignalMgr.gd"
+GameMgr="*res://scripts/manager/GameMgr.gd"
+AudioMgr="*res://scripts/manager/AudioMgr.gd"
+
+[display]
+
+window/size/width=480
+window/size/height=852
+window/size/resizable=false
+window/size/always_on_top=true
+window/size/test_width=480
+window/size/test_height=852
+window/dpi/allow_hidpi=true
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/codeandweb.texturepacker/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[layer_names]
+
+2d_physics/layer_1="Enemy"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Supply"
+2d_physics/layer_4="EnemyBullet"
+2d_physics/layer_5="PlayerBullet"
+
+[physics]
+
+common/enable_pause_aware_picking=true
