@@ -65,7 +65,7 @@ func _on_EnemySpawnTimer_timeout() -> void:
 	var idx = MathUtil.rand_weight(enemy_spawn_weight_arr)
 	var enemy_scene:PackedScene = enemy_scene_arr[idx].scene
 	var enemy_ins:EnemyBase = enemy_scene.instance()
-	var rand_pos_x = rand_range(0,OS.window_size.x)
+	var rand_pos_x = rand_range(0,get_viewport_rect().size.x)
 	enemy_ins.global_position = Vector2(rand_pos_x,spawn_pos.global_position.y)
 	aircraft_container.add_child(enemy_ins)
 
@@ -73,6 +73,6 @@ func _on_SupplySpawnTimer_timeout() -> void:
 	var idx = MathUtil.rand_weight(supply_spawn_weight_arr)
 	var supply_scene:PackedScene = supply_scene_arr[idx].scene
 	var supply_ins:SupplyBase = supply_scene.instance()
-	var rand_pos_x = rand_range(0,OS.window_size.x)
+	var rand_pos_x = rand_range(0,get_viewport_rect().size.x)
 	supply_ins.global_position = Vector2(rand_pos_x,spawn_pos.global_position.y)
 	supply_container.add_child(supply_ins)

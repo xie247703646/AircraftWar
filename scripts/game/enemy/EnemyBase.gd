@@ -19,7 +19,6 @@ func _ready() -> void:
 	connect("area_entered",self,"_on_area_hit")
 
 func _physics_process(delta: float) -> void:
-	if not is_alive(): return
 	global_position.y += fly_speed * delta
 
 func hurt(damage:int)->void:
@@ -33,6 +32,7 @@ func hurt(damage:int)->void:
 		anim_sprite.play("hurt")
 
 func die()->void:
+	set_physics_process(false)
 	collision.set_deferred("disabled",true)
 	anim_sprite.play("die")
 

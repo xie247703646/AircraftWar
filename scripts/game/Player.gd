@@ -25,10 +25,9 @@ func start_shoot()->void:
 
 func _physics_process(delta: float) -> void:
 	if not _is_dragging: return
-	if not is_alive(): return
 	global_position = get_global_mouse_position() + _drag_offset
-	global_position.x = clamp(global_position.x,0,OS.window_size.x)
-	global_position.y = clamp(global_position.y,0,OS.window_size.y)
+	global_position.x = clamp(global_position.x,0,get_viewport_rect().size.x)
+	global_position.y = clamp(global_position.y,0,get_viewport_rect().size.y)
 
 func _hurt(damage:int)->void:
 	life -= damage
@@ -37,6 +36,7 @@ func _hurt(damage:int)->void:
 	else: GameMgr.play_fx(fx_be_attaked,Vector2.ZERO)
 
 func _die()->void:
+	set_physics_process(false)
 	GameMgr.is_game_over = true
 	AudioMgr.play_sound("game_over")
 	AudioMgr.stop_music()
